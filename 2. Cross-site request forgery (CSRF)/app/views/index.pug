@@ -1,0 +1,18 @@
+html
+  head
+    title="OWASP Top Security Vulnerabilities Workshop" 
+    link(rel="stylesheet", href="https://cdn.simplecss.org/simple.min.css")
+  body
+    main
+      h1="OWASP Top Security Vulnerabilities Workshop"
+      div(class="flex")
+            span="Change your password"
+            form(action="/process" method="POST")
+              input(type="hidden" name="_csrf", value=csrfToken)
+              input(type="password" name="password" placeholder="Password")
+              input(type="submit" value="Change", style="margin-left: 10px")
+
+            span="Login"
+            form(action="/login" method="POST")
+              input(type="input" name="username" placeholder="Username")
+              input(type="submit" value="Login", style="margin-left: 10px")
