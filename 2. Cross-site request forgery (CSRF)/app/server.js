@@ -1,10 +1,8 @@
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const express = require("express");
-const csrf = require("csurf");
 
 // setup route middlewares
-const csrfProtection = csrf({ cookie: true });
 const parseForm = bodyParser.urlencoded({ extended: false });
 
 // create express app
@@ -21,12 +19,11 @@ app.use(cookieParser());
 const sessions = {};
 
 // root
-app.get("/", csrfProtection, function (req, res) {
-  // pass the csrfToken to the view
-  res.render("index", { csrfToken: req.csrfToken() });
+app.get("/", function (req, res) {
+  res.render("index");
 });
 
-app.post("/process", parseForm, csrfProtection, function (req, res) {
+app.post("/process", parseForm, function (req, res) {
   res.send(
     `Data is being processed! ${JSON.stringify({
       body: req.body,
