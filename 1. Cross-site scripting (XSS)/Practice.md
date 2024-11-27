@@ -3,9 +3,9 @@
 ## Steps
 
 - Go to `app` folder in terminal
+- Run `npm i`
 - Run `npm install -g nodemon`
 - Run `nodemon server.js`
-- Run `node index.js`
 
 ## Practice One
 
