@@ -3,7 +3,7 @@
 ## Requirements
 
 - Register/Login into [Port Swigger](https://portswigger.net/users)
-- Navigate to [Cross Site Scripting](https://portswigger.net/web-security/all-labs#cross-site-scripting)
+- Navigate to [Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting)
 
 ## More
 
