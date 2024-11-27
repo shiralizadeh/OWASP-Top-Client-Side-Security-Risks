@@ -7,6 +7,7 @@ const port = 3000;
 // Middleware
 app.use((req, res, next) => {
   // res.set("[HEADER]", "[VALUE]");
+  
   next();
 });
 

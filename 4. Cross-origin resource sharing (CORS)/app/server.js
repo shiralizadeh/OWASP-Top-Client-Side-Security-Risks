@@ -10,11 +10,8 @@ app.use(cookieParser());
 
 // Middleware
 app.use((req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "http://localhost:4000");
-  res.set("Access-Control-Allow-Credentials", "true");
-  // res.set("Access-Control-Allow-Methods", "GET");
-  // res.set("Access-Control-Allow-Headers", "");
-
+  // res.set("[HEADER]", "[VALUE]");
+  
   next();
 });
 
