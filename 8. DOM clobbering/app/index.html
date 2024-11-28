@@ -10,6 +10,16 @@
     <main>
       <h1>OWASP Top Client-Side Security Risks</h1>
       <h2>DOM clobbering</h2>
+      <p></p>
+
+      <a id="avatar" ></a>
+      <a id="avatar" name="url" href="<h1>AAA</h1>" ></a>
+
+      <script>
+        const avatar = window.avatar || {};
+
+        document.querySelector('p').innerHTML = avatar.url;
+      </script>
     </main>
   </body>
 </html>

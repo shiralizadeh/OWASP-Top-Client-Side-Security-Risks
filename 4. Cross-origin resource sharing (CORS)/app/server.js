@@ -1,3 +1,4 @@
+const fs = require("fs");
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const path = require("path");
@@ -9,8 +10,11 @@ app.use(cookieParser());
 
 // Middleware
 app.use((req, res, next) => {
-  // res.set("[HEADER]", "[VALUE]");
-  
+  res.set("Access-Control-Allow-Origin", "http://localhost:4000");
+  res.set("Access-Control-Allow-Credentials", "true");
+  // res.set("Access-Control-Allow-Methods", "");
+  // res.set("Access-Control-Allow-Headers", "");
+
   next();
 });
 

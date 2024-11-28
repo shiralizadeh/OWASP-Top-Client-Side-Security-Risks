@@ -7,7 +7,7 @@
 - Run `npm install -g nodemon`
 - Run `nodemon server.js`
 
-## Practice One
+## Practice
 
 - Prepare an attack to the change password form
 - Fix vulnerability using `csurf` package
@@ -15,9 +15,3 @@
 - Explore `SameSite` Cookie Attribute (`None`, `Strict`, `Lax`)
 - Explore `Secure` Cookie Attribute (`true`/`false`)
 - Explore `HttpOnly` Cookie Attribute (`true`/`false`)
-
-## Practice Two
-
-- Include `js` file in the html
-- Remove backend `/` route
-- Fix it using CSP
